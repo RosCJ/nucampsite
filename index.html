@@ -27,7 +27,10 @@
                 <div class="col">
                     <h1>Nucamp</h1>
                     <h2>a better way to camp</h2>
-                </div>          
+                </div>   
+                <div class="col-md-4 col-xl-2">
+                    <a class="btn btn-lg btn-info text-white mt-4" role="button" href="#num_campers">Reserve Campsite</a>
+                </div>       
             </div>        
         </div>
     </header>
@@ -76,8 +79,14 @@
                 <h2>Featured Campsites</h2>
             </div>
             <div class="col">
-                <h3>React Lake Campground</h3>
-                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>    
+                <!-- new code here -->
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <h3>React Lake Campground</h3>
+                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>     
+                    </div>
+                    <img class="ms-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake" />
+                </div>           
             </div>    
         </section>
 
@@ -97,6 +106,49 @@
             </div>
         </section>
 
+        <!-- Reservation Form -->
+        <section class="row row-content">
+            <div class="col col-sm-9 mx-auto">
+                <div class="card">
+                    <h3 class="card-header bg-info text-light">Reserve a Campsite</h3>
+                    <div class="card-body">
+                        <form action="https://us-central1-nucamp-production.cloudfuctions.net/post/formdata method="post" class="survey-form" id="reserveForm">
+                        
+                            <!-- survey-form above  ?? -->
+
+                            <div class="row mb-3">
+                                <label for="num_campers" class=" col-form-label col-sm-6">Number of Campers</label>
+                                <div class="col-sm-6">
+                                    <select id="num_campers" name="num_campers" class="form-control">
+                                        <option selected>Select...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>    
+                            </div>
+                            <div class="row mb-3">
+                                <label for="date" class="col-sm-6 col-form-label">Date</label>
+                                <div class="col-sm-6">
+                                    <input type="field" id="date" name="date" placeholder="mm/dd/yyyy" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary color-light">Search</button>
+                                </div>
+                            </div>
+                            <div class="offset-md-2 col-md-10">    
+                                
+                            </div>
+                        </form>      
+                    </div>
+                </div> <!-- "border-info" -->
+            </div>
+        </section>
     </main>
 
     <!-- footer -->
