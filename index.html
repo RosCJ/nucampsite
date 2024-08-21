@@ -22,14 +22,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <img src="img/logo.png" class="img-fluid" />
+                    <img src="img/logo.png" class="img-fluid" alt="Nucamp logo" />
                 </div>
                 <div class="col">
                     <h1>Nucamp</h1>
                     <h2>a better way to camp</h2>
                 </div>   
                 <div class="col-md-4 col-xl-2">
-                    <a class="btn btn-lg btn-info text-white mt-4" role="button" href="#num_campers">Reserve Campsite</a>
+                    <a class="btn btn-lg btn-info text-white mt-4 text-nowrap" role="button" href="#num_campers">Reserve Campsite</a>
                 </div>       
             </div>        
         </div>
@@ -38,9 +38,8 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
+            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" alt="Nucamp logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nucampNavbar">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=""#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="nucampNavbar">
@@ -79,7 +78,6 @@
                 <h2>Featured Campsites</h2>
             </div>
             <div class="col">
-                <!-- new code here -->
                 <div class="d-flex">
                     <div class="align-self-center">
                         <h3>React Lake Campground</h3>
@@ -112,7 +110,7 @@
                 <div class="card">
                     <h3 class="card-header bg-info text-light">Reserve a Campsite</h3>
                     <div class="card-body">
-                        <form action="https://us-central1-nucamp-production.cloudfuctions.net/post/formdata method="post" class="survey-form" id="reserveForm">
+                        <form action="https://us-central1-nucamp-production.cloudfuctions.net/post/formdata" method="post" class="survey-form" id="reserveForm">
                         
                             <!-- survey-form above  ?? -->
 
@@ -133,7 +131,7 @@
                             <div class="row mb-3">
                                 <label for="date" class="col-sm-6 col-form-label">Date</label>
                                 <div class="col-sm-6">
-                                    <input type="field" id="date" name="date" placeholder="mm/dd/yyyy" class="form-control" />
+                                    <input type="date" id="date" name="date"  class="form-control" />
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -141,12 +139,9 @@
                                     <button type="submit" class="btn btn-primary color-light">Search</button>
                                 </div>
                             </div>
-                            <div class="offset-md-2 col-md-10">    
-                                
-                            </div>
                         </form>      
                     </div>
-                </div> <!-- "border-info" -->
+                </div> 
             </div>
         </section>
     </main>
